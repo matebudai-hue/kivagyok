@@ -241,14 +241,13 @@ body > header nav a[aria-current] { text-decoration: underline; text-decoration-
 .feature-plate strong { font: 800 clamp(29px, 4.6vw, 66px)/.98 var(--title); letter-spacing: -.06em; }
 .lake-plate { background: var(--red); color: white; }
 .lake-plate .eyebrow { color: inherit; }
-.credit-plate, .book-plate { background: var(--ink); color: var(--paper); }
-.credit-plate small, .book-plate small { color: var(--bright); }
+.credit-plate { background: var(--ink); color: var(--paper); }
+.credit-plate small { color: var(--bright); }
 .credit-plate p { margin: 6px 0 0; font: 800 clamp(19px, 2.65vw, 34px)/1.12 var(--title); letter-spacing: -.04em; }
-.book-plate { border-left: 6px solid var(--red); }
-.book-plate strong { margin: 8px 0; }
-.book-plate > span { font-size: 13px; }
 .book-image { align-items: center; background: var(--wash); }
 .book-image img { display: block; width: min(100%, 240px); height: 173px; object-fit: contain; }
+.intuitiv-cover { padding: 0; }
+.intuitiv-cover img { width: 100%; height: auto; }
 
 .page-about .intro { grid-template-columns: minmax(0, 1fr) minmax(110px, .3fr); padding: 0; align-items: stretch; }
 .page-about .page-intro-copy { padding: clamp(17px, 2.6vw, 35px); align-self: center; }
