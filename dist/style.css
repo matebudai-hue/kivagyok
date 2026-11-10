@@ -114,12 +114,26 @@ body > header nav a[aria-current] { text-decoration: underline; text-decoration-
 .home-proof li { min-width: 0; padding: 8px 13px; }
 .home-proof li + li { border-left: 1px solid var(--line); }
 .home-proof b { display: block; font: 800 clamp(17px, 2vw, 25px)/1.13 var(--title); letter-spacing: -.04em; }
-.home-proof span { color: var(--muted); font-size: 12px; }
+.home-proof span { display: block; margin-top: 2px; color: var(--muted); font-size: 12px; }
+.home-proof li a { display: block; }
+.proof-award { background: var(--wash); box-shadow: inset 3px 0 var(--red); }
+.proof-award b { color: var(--red); }
+.home-references { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.home-references h2 { margin: 0; font-size: 16px; letter-spacing: -.02em; }
+.home-references p { flex: 1; margin: 0; color: var(--muted); font-size: 14px; }
+.home-references a { color: var(--red); font-size: 13px; font-weight: 700; }
 
 .home-work { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: clamp(14px, 2.5vw, 35px); margin-block: 20px; }
 .home-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
 .home-section-head h2 { margin: 0; }
 .home-section-head a { color: var(--red); font-size: 13px; font-weight: 700; }
+.home-services { margin: 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
+.home-services li { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 4px 12px; align-items: baseline; padding: 7px 8px; border-bottom: 1px solid var(--line); }
+.home-services li a { text-decoration: underline; text-decoration-color: var(--line); }
+.home-services li a:hover { color: var(--red); text-decoration-color: var(--red); }
+.home-services li span { color: var(--muted); font-size: 13px; }
+.home-programs .course-list { margin-top: 8px; border-top-width: 1px; }
+.home-finder-link { display: inline-block; margin-top: 7px; color: var(--red); font-size: 13px; font-weight: 700; }
 .course-list { margin: 0; padding: 0; border-top: 2px solid var(--ink); list-style: none; }
 .course-list li { border-bottom: 1px solid var(--line); }
 .course-list a { display: grid; grid-template-columns: 30px minmax(0, 1fr) 16px; align-items: center; gap: 8px; min-height: 43px; padding: 5px 8px; }
@@ -145,9 +159,6 @@ body > header nav a[aria-current] { text-decoration: underline; text-decoration-
 .question legend { font-weight: 700; }
 #results a { display: block; margin-top: 9px; padding: 8px 11px; border-left: 3px solid var(--red); background: var(--paper); }
 #results p { max-width: none; font-size: 14px; }
-.service-links { display: flex; flex-wrap: wrap; gap: 5px 16px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
-.service-links span { font-weight: 700; }
-.service-links a { text-decoration: underline; }
 .home-reading { margin-block: 20px 18px; }
 .reading-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--line); }
 .reading-links a { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 10px; }
@@ -259,6 +270,9 @@ body > header nav a[aria-current] { text-decoration: underline; text-decoration-
 .profile-award h2 { font-size: clamp(23px, 3vw, 36px); }
 .profile-award a { display: block; color: var(--red); font-size: 14px; font-weight: 700; }
 .references { font-weight: 700; }
+.profile-media { display: flex; flex-wrap: wrap; align-content: start; gap: 6px 16px; }
+.profile-media a { color: var(--red); font-weight: 700; text-decoration: underline; }
+.page-about .editorial-row:target { background: var(--wash); box-shadow: inset 3px 0 var(--red); }
 .download { display: flex; gap: 10px 24px; align-items: center; justify-content: space-between; padding: 12px; border-bottom: 1px solid var(--line); }
 .download p { margin: 2px 0; font-size: 14px; }
 .download .button { flex-shrink: 0; }
@@ -323,6 +337,9 @@ footer a { overflow-wrap: anywhere; }
   .home-proof li:nth-child(3) { border-left: 0; }
   .home-proof li:nth-child(n+3) { border-top: 1px solid var(--line); }
   .home-work { margin-block: 15px; }
+  .home-references { justify-content: space-between; }
+  .home-references p { flex-basis: 100%; order: 1; }
+  .home-services li { grid-template-columns: minmax(0, 1fr); gap: 1px; }
   .course-list a { min-height: 46px; }
   .finder { gap: 5px; }
   .finder label { min-height: 38px; }
