@@ -472,3 +472,5 @@ footer a { overflow-wrap: anywhere; }
  .home-portrait { display:block;min-height:150px;max-height:180px; }
  .home-portrait img { height:180px; }
 }
+
+.home-lead-copy>p:not(.eyebrow) { font-size:18px;line-height:1.55;max-width:60ch; }
