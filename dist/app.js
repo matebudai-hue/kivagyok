@@ -23,7 +23,7 @@ const finder = document.querySelector('#finder');
 finder?.addEventListener('change', event => {
   if (event.target.type === 'checkbox') {
     document.querySelector('#results').replaceChildren();
-    finder.querySelector('button').textContent = 'Melyik képzést ajánlod? ↗';
+    finder.querySelector('button').textContent = 'Milyen közös munkát javasolsz? ↗';
   }
 });
 finder?.addEventListener('submit', event => {
